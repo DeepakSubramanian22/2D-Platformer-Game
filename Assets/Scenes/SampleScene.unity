@@ -552,25 +552,6 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.9658792, y: 2.222253}
   m_EdgeRadius: 0
---- !u!95 &1339835041 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 505830310610250785, guid: 6149bd36176343d48a8a71633969a6c6,
-    type: 3}
-  m_PrefabInstance: {fileID: 7104812000579000594}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1339835044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1339835038}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c61a7a3914253264cb445aa18688bc3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerController
-  animator: {fileID: 1339835041}
 --- !u!1 &1515101205
 GameObject:
   m_ObjectHideFlags: 0
@@ -1622,10 +1603,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1339835039}
-    - targetCorrespondingSourceObject: {fileID: 7185144765168309594, guid: 6149bd36176343d48a8a71633969a6c6,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1339835044}
   m_SourcePrefab: {fileID: 100100000, guid: 6149bd36176343d48a8a71633969a6c6, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
