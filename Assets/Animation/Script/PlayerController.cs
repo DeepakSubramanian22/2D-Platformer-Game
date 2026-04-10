@@ -3,6 +3,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    public ScoreCard scoreCard;
     public Animator animator;
     public float speed ;
     private Rigidbody2D rb2d;
@@ -89,5 +90,6 @@ public class PlayerController : MonoBehaviour
     public void PickKey()
     {
        Debug.Log("Player Picked up the Key");
+       scoreCard.IncreaseScore(10);
     }
 } 
