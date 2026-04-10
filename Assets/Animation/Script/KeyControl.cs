@@ -11,4 +11,5 @@ public class KeyControl : MonoBehaviour
          Destroy(gameObject);
      }
  }
+ 
 }
