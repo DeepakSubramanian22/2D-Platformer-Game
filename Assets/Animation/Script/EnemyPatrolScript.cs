@@ -26,7 +26,7 @@ public class EnemyPatrol : MonoBehaviour
         currentTarget = pointB;
 
         // enemy is always walking so set this to true immediately
-        animator.SetBool("isWalking", true);
+        animator.SetBool("EnemyWalk", true);
     }
 
     private void Update()
