@@ -3,17 +3,25 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public ScoreCard scoreCard;
+    public ScoreCard scoreCard;    
     public Animator animator;
     public float speed ;
     private Rigidbody2D rb2d;
     public float jump;
+    public GameOver gameOver;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
     {
         Debug.Log("Player controller awake");
         rb2d = gameObject.GetComponent<Rigidbody2D>();
+    }
+
+    public void KillPlayer()
+    {
+        Debug.Log("Player Killed");
+        gameOver.PlayerDied();
+        
     }
 
 
@@ -31,7 +39,7 @@ public class PlayerController : MonoBehaviour
         MoveCharacter(horizontal, vertical);
         PlayerMovementAnimation(horizontal, vertical); 
         CrouchControll();
-        ;    }
+    }
 
     private void MoveCharacter(float horizontal ,float vertical)
     {
