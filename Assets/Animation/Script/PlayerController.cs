@@ -9,7 +9,6 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb2d;
     public float jump;
     public GameOver gameOver;
-    public EnemyPatrol enemy; 
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
@@ -21,7 +20,8 @@ public class PlayerController : MonoBehaviour
     public void KillPlayer()
     {
         Debug.Log("Player Killed");
-        gameOver.ReloadLevel();
+        gameOver.PlayerDied();
+        this.enabled = false; 
         
     }
 
