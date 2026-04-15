@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine;
 using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour
@@ -16,7 +17,7 @@ public class GameOver : MonoBehaviour
       gameObject.SetActive(true);
    }
 
-   private void ReloadLevel()
+   public void ReloadLevel()
    {
       Debug.Log("Reload Scene 0");
       SceneManager.LoadScene(0); 

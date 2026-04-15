@@ -84,12 +84,7 @@ public class EnemyPatrol : MonoBehaviour
 
         if (player != null)
         {
-            // reload the scene — player dies
-            UnityEngine.SceneManagement.SceneManager
-                .LoadScene(
-                    UnityEngine.SceneManagement.SceneManager
-                        .GetActiveScene().name
-                );
+          player.KillPlayer(); 
         }
     }
 }
