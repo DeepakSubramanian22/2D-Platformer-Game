@@ -20,6 +20,6 @@ public class GameOver : MonoBehaviour
    public void ReloadLevel()
    {
       Debug.Log("Reload Scene 0");
-      SceneManager.LoadScene(0); 
+      SceneManager.LoadScene(1); 
    }
 }
