@@ -23,8 +23,10 @@ public class GameOver : MonoBehaviour
 
    public void ReloadLevel()
    {
-      Debug.Log("Reload Scene 0");
-      SceneManager.LoadScene(1); 
+      // reloads CURRENT scene — works on any level
+      SceneManager.LoadScene(
+         SceneManager.GetActiveScene().buildIndex
+      );
    }
 
    private void quitGame()
