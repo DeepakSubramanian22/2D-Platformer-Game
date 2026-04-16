@@ -1033,27 +1033,27 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 32128
-    - m_Data: 34084
-    - m_Data: 34102
-    - m_Data: 34298
-    - m_Data: 34300
-    - m_Data: 34302
-    - m_Data: 34304
-    - m_Data: 34306
-    - m_Data: 34308
-    - m_Data: 34310
-    - m_Data: 34312
-    - m_Data: 34314
-    - m_Data: 34316
-    - m_Data: 34318
-    - m_Data: 34320
-    - m_Data: 34322
-    - m_Data: 34324
-    - m_Data: 34326
-    - m_Data: 34328
-    - m_Data: 34330
-    - m_Data: 34332
+    - m_Data: 32432
+    - m_Data: 34178
+    - m_Data: 34180
+    - m_Data: 34182
+    - m_Data: 34184
+    - m_Data: 34186
+    - m_Data: 34188
+    - m_Data: 34190
+    - m_Data: 34192
+    - m_Data: 34194
+    - m_Data: 34196
+    - m_Data: 34198
+    - m_Data: 34200
+    - m_Data: 34202
+    - m_Data: 34204
+    - m_Data: 34206
+    - m_Data: 34208
+    - m_Data: 34210
+    - m_Data: 34212
+    - m_Data: 34214
+    - m_Data: 34216
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1087,27 +1087,27 @@ MonoBehaviour:
       m_Data: 0
     m_ExpandedIDs:
     - m_Data: 0
-    - m_Data: 32128
-    - m_Data: 34084
-    - m_Data: 34102
-    - m_Data: 34298
-    - m_Data: 34300
-    - m_Data: 34302
-    - m_Data: 34304
-    - m_Data: 34306
-    - m_Data: 34308
-    - m_Data: 34310
-    - m_Data: 34312
-    - m_Data: 34314
-    - m_Data: 34316
-    - m_Data: 34318
-    - m_Data: 34320
-    - m_Data: 34322
-    - m_Data: 34324
-    - m_Data: 34326
-    - m_Data: 34328
-    - m_Data: 34330
-    - m_Data: 34332
+    - m_Data: 32432
+    - m_Data: 34178
+    - m_Data: 34180
+    - m_Data: 34182
+    - m_Data: 34184
+    - m_Data: 34186
+    - m_Data: 34188
+    - m_Data: 34190
+    - m_Data: 34192
+    - m_Data: 34194
+    - m_Data: 34196
+    - m_Data: 34198
+    - m_Data: 34200
+    - m_Data: 34202
+    - m_Data: 34204
+    - m_Data: 34206
+    - m_Data: 34208
+    - m_Data: 34210
+    - m_Data: 34212
+    - m_Data: 34214
+    - m_Data: 34216
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1868,7 +1868,7 @@ MonoBehaviour:
   m_AudioPlay: 0
   m_DebugDrawModesUseInteractiveLightBakingData: 0
   m_Position:
-    m_Target: {x: 555, y: 375.2, z: 0}
+    m_Target: {x: 600.7914, y: 167.80655, z: 0.5540305}
     speed: 2
     m_Value: {x: 555, y: 375.2, z: 0}
   m_RenderMode: 0
@@ -1920,7 +1920,7 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 281.55594
+    m_Target: 443.3183
     speed: 2
     m_Value: 281.55594
   m_Ortho:
