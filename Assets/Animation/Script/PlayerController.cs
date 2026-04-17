@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 
@@ -40,6 +41,12 @@ public class PlayerController : MonoBehaviour
         MoveCharacter(horizontal, vertical);
         PlayerMovementAnimation(horizontal, vertical); 
         CrouchControll();
+        
+        if (isGrounded && Input.GetKeyDown(KeyCode.Space))
+        {
+            rb2d.AddForce(new Vector2(0f, jump), ForceMode2D.Impulse);
+        }
+        
     }
 
     private void MoveCharacter(float horizontal ,float vertical)
@@ -50,12 +57,24 @@ public class PlayerController : MonoBehaviour
         Vector3 position = transform.position;
         position.x += horizontal* speed * Time.deltaTime;
         transform.position = position;
+    }
 
+    private bool isGrounded;
 
-        //move characater veritcally 
-        if(vertical > 0)
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Ground"))
         {
-            rb2d.AddForce(new Vector2(0f, jump), ForceMode2D.Force);
+            isGrounded = true;
+            Debug.Log("Grounded");
+        }
+    }
+
+    private void OnCollisionExit2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Ground"))
+        {
+            isGrounded = false;
         }
     }
 
