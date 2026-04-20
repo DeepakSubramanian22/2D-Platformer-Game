@@ -298,5 +298,5 @@ MonoBehaviour:
   scoreCard: {fileID: 0}
   animator: {fileID: 505830310610250785}
   speed: 10
-  jump: 15
+  jump: 20
   gameOver: {fileID: 0}
