@@ -27,7 +27,7 @@ Transform:
   m_GameObject: {fileID: 6132901797975322616}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.3, y: 3.6, z: -10}
+  m_LocalPosition: {x: 9.29, y: 3.6, z: -10}
   m_LocalScale: {x: 1, y: 0.54999, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -268,7 +268,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 1
+  m_Mass: 2
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -281,7 +281,7 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!114 &8795606106659957184
 MonoBehaviour:
@@ -290,7 +290,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7185144765168309594}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c61a7a3914253264cb445aa18688bc3e, type: 3}
   m_Name: 
@@ -298,5 +298,5 @@ MonoBehaviour:
   scoreCard: {fileID: 0}
   animator: {fileID: 505830310610250785}
   speed: 10
-  jump: 10
+  jump: 15
   gameOver: {fileID: 0}
