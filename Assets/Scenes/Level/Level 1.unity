@@ -379,8 +379,8 @@ Transform:
   m_GameObject: {fileID: 145098893}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 33.02667, y: -7.7, z: 0}
-  m_LocalScale: {x: 78.80845, y: 1, z: 1}
+  m_LocalPosition: {x: 51.9, y: -7.7, z: 0}
+  m_LocalScale: {x: 128.06374, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1819110792}
@@ -1316,7 +1316,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: -2.1221886, z: 2.9765093, w: 0}
+  m_margin: {x: 0, y: -2.1221886, z: -77.32041, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -5125,8 +5125,8 @@ Transform:
   - {fileID: 1476640537}
   - {fileID: 1522209437}
   - {fileID: 1014148544}
-  - {fileID: 2063448413}
   - {fileID: 2123020306}
+  - {fileID: 2063448413}
   - {fileID: 2143365806}
   - {fileID: 1983345464}
   - {fileID: 872054617}
@@ -5173,7 +5173,7 @@ PrefabInstance:
     - target: {fileID: 3791549713987015435, guid: f6362d3e0aa79d84c88fe0bc82b971c2,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.92
+      value: 4.72
       objectReference: {fileID: 0}
     - target: {fileID: 3791549713987015435, guid: f6362d3e0aa79d84c88fe0bc82b971c2,
         type: 3}
@@ -6452,16 +6452,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Player
-      objectReference: {fileID: 0}
-    - target: {fileID: 7957061707785890387, guid: 6149bd36176343d48a8a71633969a6c6,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 8.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7957061707785890387, guid: 6149bd36176343d48a8a71633969a6c6,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8795606106659957184, guid: 6149bd36176343d48a8a71633969a6c6,
         type: 3}
