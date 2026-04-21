@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb2d;
     public float jump;
     public GameOver gameOver;
+   
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private void Awake()
