@@ -207,4 +207,3 @@ MonoBehaviour:
   speed: 10
   jump: 20
   gameOver: {fileID: 0}
-  Camera: {fileID: 0}

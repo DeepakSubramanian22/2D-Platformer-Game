@@ -6528,11 +6528,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8795606106659957184, guid: 6149bd36176343d48a8a71633969a6c6,
         type: 3}
-      propertyPath: Camera
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 8795606106659957184, guid: 6149bd36176343d48a8a71633969a6c6,
-        type: 3}
       propertyPath: gameOver
       value: 
       objectReference: {fileID: 1264853373}
