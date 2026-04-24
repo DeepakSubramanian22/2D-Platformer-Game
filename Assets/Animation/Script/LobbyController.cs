@@ -5,22 +5,17 @@ using UnityEngine.UI;
 public class LobbyController : MonoBehaviour
 {
     public Button Buttonplay;
-    public Button ButtonQuit;
+    public GameObject LevelSelection; 
 
     private void Awake()
     {
         Buttonplay.onClick.AddListener(PlayGame);
-        ButtonQuit.onClick.AddListener(QuitGame);
     }
 
     private void PlayGame()
-    {
-        SceneManager.LoadScene(1);
-    }
-
-    private void QuitGame()
-    {
-        UnityEditor.EditorApplication.isPlaying = false; 
+    { 
+        //SceneManager.LoadScene(1);s
+        LevelSelection.SetActive(true);
     }
 
 }
