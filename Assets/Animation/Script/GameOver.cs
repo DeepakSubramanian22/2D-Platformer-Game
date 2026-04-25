@@ -35,6 +35,7 @@ public class GameOver : MonoBehaviour
    }
    private void mainMenu()
    {
-      SceneManager.LoadScene(0);
+      PlayerPrefs.SetInt("ShowLevelSelect", 1);
+      SceneManager.LoadScene("Lobby");
    }
 }
