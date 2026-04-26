@@ -8,7 +8,8 @@ public class LevelLoader : MonoBehaviour
 {
     private Button button;
 
-    public string LevelName;
+    public string LevelName;   
+    public LevelStatus LevelStatus;
 
     private void Awake()
     {
@@ -18,6 +19,21 @@ public class LevelLoader : MonoBehaviour
 
     private void onClick()
     {
-        SceneManager.LoadScene(LevelName);
+        LevelStatus levelStatus = LevelManager.Instance.GetLevelStatus(LevelName);
+    
+        switch (levelStatus)                 // ✓ lowercase — correct variable
+        {
+            case LevelStatus.Locked:
+                Debug.Log("Cant play this level , It is locked");
+                break;
+
+            case LevelStatus.Unlocked:
+                SceneManager.LoadScene(LevelName);  // ✓ only load when unlocked
+                break;
+
+            case LevelStatus.Completed:
+                SceneManager.LoadScene(LevelName);  // ✓ allow replay
+                break;
+        }
     }
 }
