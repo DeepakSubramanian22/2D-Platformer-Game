@@ -5,9 +5,10 @@ using UnityEngine.UI;
 
 [RequireComponent(typeof(Button))]
 public class LevelLoader : MonoBehaviour
+
 {
     private Button button;
-
+public SoundManager SoundManager;
     public string LevelName;   
     public LevelStatus LevelStatus;
 
@@ -23,15 +24,17 @@ public class LevelLoader : MonoBehaviour
     
         switch (levelStatus)                 // ✓ lowercase — correct variable
         {
-            case LevelStatus.Locked:
+            case LevelStatus.Locked:    
                 Debug.Log("Cant play this level , It is locked");
                 break;
 
             case LevelStatus.Unlocked:
+                SoundManager.Instance.Play(SoundManager.Sounds.ButtonClick);
                 SceneManager.LoadScene(LevelName);  // ✓ only load when unlocked
                 break;
 
             case LevelStatus.Completed:
+                SoundManager.Instance.Play(SoundManager.Sounds.ButtonClick);
                 SceneManager.LoadScene(LevelName);  // ✓ allow replay
                 break;
         }

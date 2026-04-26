@@ -2929,6 +2929,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b200e3a98c29124bb77fde57d1cb857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelLoader
+  SoundManager: {fileID: 0}
   LevelName: Lobby
   LevelStatus: 0
 --- !u!1 &1264853369

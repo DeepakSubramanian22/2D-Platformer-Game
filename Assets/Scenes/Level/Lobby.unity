@@ -253,6 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b200e3a98c29124bb77fde57d1cb857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelLoader
+  SoundManager: {fileID: 0}
   LevelName: Level 1
   LevelStatus: 0
 --- !u!1 &107311162
@@ -1831,6 +1832,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1528794636}
+  - component: {fileID: 1528794637}
   - component: {fileID: 1528794638}
   m_Layer: 0
   m_Name: SoundManager
@@ -1856,7 +1858,7 @@ Transform:
   - {fileID: 617193690}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1528794638
+--- !u!114 &1528794637
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1868,7 +1870,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 110e16fd67aab7b439264c4928a2ada8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::SoundManager
-  Level: []
+  SoundEffects: {fileID: 617193691}
+  SoundMusic: {fileID: 1508528290}
+  sounds:
+  - soundType: 0
+    soundClip: {fileID: 8300000, guid: df6d1af64fdebb04d80a54b27b720509, type: 3}
+  - soundType: 0
+    soundClip: {fileID: 8300000, guid: 0651b56880a11ef45909b779443691aa, type: 3}
+--- !u!81 &1528794638
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1528794635}
+  m_Enabled: 1
 --- !u!1 &1721566925
 GameObject:
   m_ObjectHideFlags: 0
@@ -2003,6 +2019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b200e3a98c29124bb77fde57d1cb857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelLoader
+  SoundManager: {fileID: 0}
   LevelName: Level 3
   LevelStatus: 0
 --- !u!1 &1852610754
@@ -2216,6 +2233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b200e3a98c29124bb77fde57d1cb857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::LevelLoader
+  SoundManager: {fileID: 0}
   LevelName: Level 2
   LevelStatus: 0
 --- !u!1 &2056770611
