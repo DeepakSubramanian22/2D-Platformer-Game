@@ -9,6 +9,7 @@ public class GameOver : MonoBehaviour
    public Button buttonRestart;
    public Button buttonQuit;  
    public Button buttonMainMenu;
+   public SoundManager SoundManager; 
 
    private void Awake()
    {
@@ -18,6 +19,7 @@ public class GameOver : MonoBehaviour
    }
    public void PlayerDied()
    {
+      SoundManager.Instance.PlayMusic(SoundManager.Sounds.PlayerDeath);
       gameObject.SetActive(true);
    }
 

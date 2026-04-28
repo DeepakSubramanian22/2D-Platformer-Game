@@ -9,8 +9,7 @@ public class SoundManager : MonoBehaviour
     {
         get { return instance; }
     }
-
-  
+    
     public AudioSource SoundEffects;
     public AudioSource SoundMusic;
     public SoundType[] sounds;
@@ -28,12 +27,32 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        PlayMusic(Sounds.Music);         // ✓ removed global::
+    }
+
+    public void PlayMusic(Sounds sound)
+    {
+        AudioClip clip = getSoundClip(sound);
+        if (clip != null)
+        {
+            SoundMusic.clip = clip;
+            SoundMusic.loop = true;      // ✓ music should loop
+            SoundMusic.Play();           // ✓ correct method for music
+        }
+        else
+        {
+            Debug.LogError("Clip Not Found: " + sound);
+        }
+    }
+
     public void Play(Sounds sound)
     {
         AudioClip clip = getSoundClip(sound);
         if (clip != null)
         {
-            SoundEffects.PlayOneShot(clip);
+            SoundEffects.PlayOneShot(clip);   // ✓ correct for sound effects
         }
         else
         {
@@ -44,7 +63,7 @@ public class SoundManager : MonoBehaviour
     private AudioClip getSoundClip(Sounds sound)
     {
         SoundType item = Array.Find(sounds, i => i.soundType == sound);
-        if (item != null)        // ✓ flipped logic
+        if (item != null)
             return item.soundClip;
         return null;
     }
@@ -60,6 +79,7 @@ public class SoundManager : MonoBehaviour
     {
         ButtonClick,
         PlayerMove,
+        Music,
         PlayerDeath,
         EnemyDeath,
     }
