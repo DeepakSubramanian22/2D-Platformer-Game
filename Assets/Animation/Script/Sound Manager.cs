@@ -1,5 +1,6 @@
 using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SoundManager : MonoBehaviour
 {
@@ -9,7 +10,7 @@ public class SoundManager : MonoBehaviour
     {
         get { return instance; }
     }
-    
+
     public AudioSource SoundEffects;
     public AudioSource SoundMusic;
     public SoundType[] sounds;
@@ -20,6 +21,9 @@ public class SoundManager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
+
+            // listen for scene changes
+            SceneManager.sceneLoaded += OnSceneLoaded;
         }
         else
         {
@@ -27,9 +31,14 @@ public class SoundManager : MonoBehaviour
         }
     }
 
-    private void Start()
+    // runs every time any scene loads
+    private void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        PlayMusic(Sounds.Music);         // ✓ removed global::
+        // stop all effects first
+        SoundEffects.Stop();
+
+        // always restart background music fresh
+        PlayMusic(Sounds.Music);
     }
 
     public void PlayMusic(Sounds sound)
@@ -37,9 +46,14 @@ public class SoundManager : MonoBehaviour
         AudioClip clip = getSoundClip(sound);
         if (clip != null)
         {
+            // only restart if not already playing this clip
+            if (SoundMusic.clip == clip && SoundMusic.isPlaying)
+                return;
+
+            SoundMusic.Stop();
             SoundMusic.clip = clip;
-            SoundMusic.loop = true;      // ✓ music should loop
-            SoundMusic.Play();           // ✓ correct method for music
+            SoundMusic.loop = true;
+            SoundMusic.Play();
         }
         else
         {
@@ -52,7 +66,7 @@ public class SoundManager : MonoBehaviour
         AudioClip clip = getSoundClip(sound);
         if (clip != null)
         {
-            SoundEffects.PlayOneShot(clip);   // ✓ correct for sound effects
+            SoundEffects.PlayOneShot(clip);
         }
         else
         {
@@ -66,6 +80,12 @@ public class SoundManager : MonoBehaviour
         if (item != null)
             return item.soundClip;
         return null;
+    }
+
+    private void OnDestroy()
+    {
+        // clean up listener when destroyed
+        SceneManager.sceneLoaded -= OnSceneLoaded;
     }
 
     [System.Serializable]
