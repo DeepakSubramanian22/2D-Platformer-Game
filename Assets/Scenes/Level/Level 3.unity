@@ -183,7 +183,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8033223168622628293, guid: 3481cabc1749334439cf5dd835c7894a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -287,7 +288,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 96963108}
-  - component: {fileID: 96963109}
   m_Layer: 0
   m_Name: PointA
   m_TagString: Untagged
@@ -310,21 +310,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1464178409}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &96963109
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 96963107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57288004c5689e8439a04cf51cde248a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyPatrol
-  pointA: {fileID: 0}
-  pointB: {fileID: 0}
-  speed: 2
 --- !u!1 &98284715
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,7 +319,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 98284716}
-  - component: {fileID: 98284717}
   m_Layer: 0
   m_Name: PointB
   m_TagString: Untagged
@@ -357,21 +341,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1818469747}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &98284717
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 98284715}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57288004c5689e8439a04cf51cde248a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyPatrol
-  pointA: {fileID: 0}
-  pointB: {fileID: 0}
-  speed: 2
 --- !u!1 &145098893
 GameObject:
   m_ObjectHideFlags: 0
@@ -939,7 +908,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 266538568}
-  - component: {fileID: 266538569}
   m_Layer: 0
   m_Name: PointB
   m_TagString: Untagged
@@ -962,21 +930,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1464178409}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &266538569
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 266538567}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57288004c5689e8439a04cf51cde248a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyPatrol
-  pointA: {fileID: 0}
-  pointB: {fileID: 0}
-  speed: 2
 --- !u!1 &287436682
 GameObject:
   m_ObjectHideFlags: 0
@@ -986,7 +939,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 287436683}
-  - component: {fileID: 287436684}
   m_Layer: 0
   m_Name: PointA
   m_TagString: Untagged
@@ -1009,21 +961,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1065901739}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &287436684
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 287436682}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57288004c5689e8439a04cf51cde248a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyPatrol
-  pointA: {fileID: 0}
-  pointB: {fileID: 0}
-  speed: 2
 --- !u!1 &330507171
 GameObject:
   m_ObjectHideFlags: 0
@@ -1033,7 +970,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 330507172}
-  - component: {fileID: 330507173}
   m_Layer: 0
   m_Name: PointA
   m_TagString: Untagged
@@ -1056,21 +992,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1818469747}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &330507173
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 330507171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57288004c5689e8439a04cf51cde248a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyPatrol
-  pointA: {fileID: 0}
-  pointB: {fileID: 0}
-  speed: 2
 --- !u!1001 &333095534
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1433,7 +1354,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 489633814}
-  - component: {fileID: 489633815}
   m_Layer: 0
   m_Name: PointB
   m_TagString: Untagged
@@ -1456,21 +1376,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 595547652}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &489633815
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 489633813}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57288004c5689e8439a04cf51cde248a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyPatrol
-  pointA: {fileID: 0}
-  pointB: {fileID: 0}
-  speed: 2
 --- !u!1 &491494149
 GameObject:
   m_ObjectHideFlags: 0
@@ -1831,7 +1736,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 680455723}
-  - component: {fileID: 680455724}
   m_Layer: 0
   m_Name: PointB
   m_TagString: Untagged
@@ -1854,21 +1758,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1065901739}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &680455724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 680455722}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57288004c5689e8439a04cf51cde248a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyPatrol
-  pointA: {fileID: 0}
-  pointB: {fileID: 0}
-  speed: 2
 --- !u!1 &682375075
 GameObject:
   m_ObjectHideFlags: 0
@@ -1896,8 +1785,8 @@ Transform:
   m_GameObject: {fileID: 682375075}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -35.3, y: -16.7, z: 0}
-  m_LocalScale: {x: 2.0564625, y: 2.3392262, z: 1.769}
+  m_LocalPosition: {x: -49.2, y: -16.7, z: 0}
+  m_LocalScale: {x: 2.2878144, y: 2.9532733, z: 1.769}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1819110792}
@@ -2093,7 +1982,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8033223168622628293, guid: 3481cabc1749334439cf5dd835c7894a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -2119,7 +2009,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 697635655}
-  - component: {fileID: 697635656}
   m_Layer: 0
   m_Name: PointB
   m_TagString: Untagged
@@ -2142,21 +2031,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1363941784}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &697635656
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 697635654}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57288004c5689e8439a04cf51cde248a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyPatrol
-  pointA: {fileID: 0}
-  pointB: {fileID: 0}
-  speed: 2
 --- !u!1 &831892131
 GameObject:
   m_ObjectHideFlags: 0
@@ -3362,7 +3236,8 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: 0.4650141
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8033223168622628293, guid: 3481cabc1749334439cf5dd835c7894a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -3441,7 +3316,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 8
+  orthographic size: 7
   m_Depth: 0
   m_CullingMask:
     serializedVersion: 2
@@ -3955,7 +3830,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8033223168622628293, guid: 3481cabc1749334439cf5dd835c7894a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
@@ -4573,6 +4449,7 @@ MonoBehaviour:
   buttonRestart: {fileID: 1027597863}
   buttonQuit: {fileID: 350210502}
   buttonMainMenu: {fileID: 1165524971}
+  SoundManager: {fileID: 0}
 --- !u!1 &1363941783
 GameObject:
   m_ObjectHideFlags: 0
@@ -4878,7 +4755,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1754058259}
-  - component: {fileID: 1754058260}
   m_Layer: 0
   m_Name: PointA
   m_TagString: Untagged
@@ -4901,21 +4777,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 595547652}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1754058260
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1754058258}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57288004c5689e8439a04cf51cde248a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyPatrol
-  pointA: {fileID: 0}
-  pointB: {fileID: 0}
-  speed: 2
 --- !u!1 &1759585243
 GameObject:
   m_ObjectHideFlags: 0
@@ -6821,7 +6682,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1902303025}
-  - component: {fileID: 1902303026}
   m_Layer: 0
   m_Name: PointA
   m_TagString: Untagged
@@ -6844,21 +6704,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1363941784}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1902303026
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1902303024}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57288004c5689e8439a04cf51cde248a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyPatrol
-  pointA: {fileID: 0}
-  pointB: {fileID: 0}
-  speed: 2
 --- !u!1 &2021200339
 GameObject:
   m_ObjectHideFlags: 0
@@ -7485,7 +7330,8 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8033223168622628293, guid: 3481cabc1749334439cf5dd835c7894a, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:

@@ -37,27 +37,21 @@ public class EnemyPatrol : MonoBehaviour
     private void Patrol()
     {
         // move enemy toward current target
-        transform.position = Vector2.MoveTowards(
-            transform.position,
-            currentTarget.position,
-            speed * Time.deltaTime
-        );
+        transform.position = Vector2.MoveTowards(transform.position,currentTarget.position,speed * Time.deltaTime);
 
         // check how far we are from the target
-        float distanceToTarget = Vector2.Distance(
-            transform.position,
-            currentTarget.position
-        );
+        float distanceToTarget = Vector2.Distance(transform.position,currentTarget.position);
 
         // if close enough, flip direction
         if (distanceToTarget < 0.1f)
         {
             FlipDirection();
         }
-    }
+    }   
 
     private void FlipDirection()
     {
+        
         if (currentTarget == pointB)
         {
             // reached right point, now go left
@@ -79,8 +73,7 @@ public class EnemyPatrol : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         // check if we hit the player
-        PlayerController player =
-            collision.gameObject.GetComponent<PlayerController>();
+        PlayerController player = collision.gameObject.GetComponent<PlayerController>();
 
         if (player != null)
         {

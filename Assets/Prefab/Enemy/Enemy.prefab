@@ -11,13 +11,9 @@ GameObject:
   - component: {fileID: 7605898707116057439}
   - component: {fileID: 2399925756603082214}
   - component: {fileID: 7784789250782613627}
-  - component: {fileID: 8856467601592994043}
-  - component: {fileID: 4501577819343156247}
-  - component: {fileID: 4735385020898446914}
-  - component: {fileID: 5843037159838696695}
-  - component: {fileID: 8658996306547134387}
-  - component: {fileID: 3849925535802630874}
-  - component: {fileID: 3046427628441076709}
+  - component: {fileID: 8490314640222430172}
+  - component: {fileID: 8916544909590031794}
+  - component: {fileID: 8033223168622628293}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Untagged
@@ -145,67 +141,7 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1.7303557, y: 0.96415806}
   m_EdgeRadius: 0
---- !u!114 &8856467601592994043
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3300486844754430664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57288004c5689e8439a04cf51cde248a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyPatrolScript
-  pointA: {fileID: 0}
-  pointB: {fileID: 0}
-  speed: 2
---- !u!114 &4501577819343156247
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3300486844754430664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57288004c5689e8439a04cf51cde248a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyPatrolScript
-  pointA: {fileID: 0}
-  pointB: {fileID: 0}
-  speed: 2
---- !u!114 &4735385020898446914
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3300486844754430664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57288004c5689e8439a04cf51cde248a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyPatrol
-  pointA: {fileID: 0}
-  pointB: {fileID: 0}
-  speed: 2
---- !u!114 &5843037159838696695
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3300486844754430664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57288004c5689e8439a04cf51cde248a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyPatrolScript
-  pointA: {fileID: 0}
-  pointB: {fileID: 0}
-  speed: 2
---- !u!95 &8658996306547134387
+--- !u!95 &8490314640222430172
 Animator:
   serializedVersion: 7
   m_ObjectHideFlags: 0
@@ -227,22 +163,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &3849925535802630874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3300486844754430664}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57288004c5689e8439a04cf51cde248a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::EnemyPatrolScript
-  pointA: {fileID: 0}
-  pointB: {fileID: 0}
-  speed: 2
---- !u!50 &3046427628441076709
+--- !u!50 &8916544909590031794
 Rigidbody2D:
   serializedVersion: 5
   m_ObjectHideFlags: 0
@@ -269,3 +190,18 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &8033223168622628293
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3300486844754430664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57288004c5689e8439a04cf51cde248a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EnemyPatrol
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  speed: 2

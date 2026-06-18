@@ -1,6 +1,5 @@
 using UnityEngine;
 using UnityEngine.SceneManagement;
-using UnityEngine;
 using UnityEngine.UI;
 
 public class GameOver : MonoBehaviour
